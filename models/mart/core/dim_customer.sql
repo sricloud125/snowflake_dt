@@ -1,10 +1,10 @@
 
 with customers as (
-    select * from {{ref('stage_customer')}}
+    select * from {{ref('stg_customers')}}
 ),
 
 orders as (
-    select * from {{ref('stage_order')}}
+    select * from {{ref('stg_orders')}}
 ),
 
 customer_orders as (
